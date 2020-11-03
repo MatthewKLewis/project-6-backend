@@ -2,19 +2,17 @@
 This is a backend with RESTful routes and models for creating and assigning "problem tickets".
 
 # Users - ALL AUTHENTICATED!
-- Admin
-- Dispatchers
-- Workers
+- Administrators
+- Fixers
 - Users
 
 # Tickets
+- Title
 - Description of the Problem
-- Due Date
+- Dates: createdOn, assignedOn
 - Keywords?
-- Time since creation
-- Time since assignment
 
 <details>
-  <summary>Click to expand!</summary>
-  just testing these collapsibles.
+  <summary>Find it Here:</summary>
+  www.example.com
 </details>

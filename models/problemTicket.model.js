@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('../connection');
 
 const problemTicketSchema = new mongoose.Schema({
     createdOn: Date,

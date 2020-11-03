@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Matthew",
+        "email": "matthew.knight.lewis@gmail.com",
+        "rank": "admin",
+        "status": "active",
+        "accountCreatedDate": "",
+        "lastLoggedInDate": "",
+        "tickets": []
+    },
+    {
+        "name": "Bob",
+        "email": "matthew.knight.lewis@gmail.com",
+        "rank": "fixer",
+        "status": "active",
+        "accountCreatedDate": "",
+        "lastLoggedInDate": "",
+        "tickets": []
+    },
+    {
+        "name": "David",
+        "email": "matthew.knight.lewis@gmail.com",
+        "rank": "user",
+        "status": "active",
+        "accountCreatedDate": "",
+        "lastLoggedInDate": "",
+        "tickets": []
+    }
+]
