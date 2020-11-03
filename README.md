@@ -2,7 +2,7 @@
 This is a backend with RESTful routes and models for creating and assigning "problem tickets".
 
 # Users - ALL AUTHENTICATED!
-- Administrators
+- Dispatchers
 - Fixers
 - Users
 

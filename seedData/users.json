@@ -1,29 +1,42 @@
 [
     {
-        "name": "Matthew",
-        "email": "matthew.knight.lewis@gmail.com",
-        "rank": "admin",
-        "status": "active",
-        "accountCreatedDate": "",
-        "lastLoggedInDate": "",
-        "tickets": []
+        "_id" : "000000000000000000000000",
+        "tickets" : [ ],
+        "name" : "UNASSIGNED",
+        "email" : "UNASSIGNED@UNASSIGNED",
+        "rank" : "dispatcher",
+        "status" : "active",
+        "accountCreatedDate" : null,
+        "__v" : 0
     },
     {
-        "name": "Bob",
-        "email": "matthew.knight.lewis@gmail.com",
-        "rank": "fixer",
-        "status": "active",
-        "accountCreatedDate": "",
-        "lastLoggedInDate": "",
-        "tickets": []
+        "_id" : "5fa0b0f4876fae929ccd156b",
+        "tickets" : [ ],
+        "name" : "Matthew",
+        "email" : "matthew.knight.lewis@gmail.com",
+        "rank" : "dispatcher",
+        "status" : "active",
+        "accountCreatedDate" : null,
+        "__v" : 0
     },
     {
-        "name": "David",
-        "email": "matthew.knight.lewis@gmail.com",
-        "rank": "user",
-        "status": "active",
-        "accountCreatedDate": "",
-        "lastLoggedInDate": "",
-        "tickets": []
+        "_id" : "5fa0b0f4876fae929ccd156c",
+        "tickets" : [ ],
+        "name" : "Mark",
+        "email" : "matthew.knight.lewis@gmail.com",
+        "rank" : "fixer",
+        "status" : "active",
+        "accountCreatedDate" : null,
+        "__v" : 0
+    },
+    {
+        "_id" : "5fa0b0f4876fae929ccd156d",
+        "tickets" : [ ],
+        "name" : "Steven",
+        "email" : "matthew.knight.lewis@gmail.com",
+        "rank" : "user",
+        "status" : "active",
+        "accountCreatedDate" : null,
+        "__v" : 0
     }
 ]

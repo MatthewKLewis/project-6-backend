@@ -1,8 +1,11 @@
+const { ObjectID } = require('bson');
 const mongoose = require('../connection');
+const Schema = mongoose.Schema
 
 let emailRE = /@/ //I'll get a better one later
 
-const userSchema = new mongoose.Schema({
+const userSchema = new Schema({
+    _id: ObjectID,
     name: String,
     email: {
         type: String,
