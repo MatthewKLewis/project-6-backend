@@ -13,6 +13,6 @@ This is a backend with RESTful routes and models for creating and assigning "pro
 - Keywords?
 
 <details>
-  <summary>Find it Here:</summary>
-  www.example.com
+  <summary>Bronze Plan:</summary>
+  - Notes App
 </details>
