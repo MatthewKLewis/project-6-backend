@@ -18,7 +18,7 @@ const userSchema = new Schema({
     },
     rank: {
         type: String,
-        enum:['user', 'fixer', 'dispatcher']
+        enum:['client', 'fixer', 'dispatcher']
     },
     status: {
         type: String,

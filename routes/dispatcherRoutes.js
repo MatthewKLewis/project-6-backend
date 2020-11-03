@@ -1,12 +1,20 @@
 const express = require('express')
 
+const ProblemTicket = require('../models/problemTicket.model')
+const User = require('../models/user.model')
+
 router = express()
 router.use(express.json())
 router.set('json spaces', 4)
 
 // Dispatcher Home Page: List of 10 most recent tickets
+// Populate originator, assignedTo, and assignedBy
 router.get('/', (req,res) => {
-    res.json({message: 'the most recent 10 tickets'})
+    ProblemTicket.find({})
+        .populate('originator').populate('assignedTo').populate('assignedBy')
+        .then((data)=> {
+            res.json(data);
+        })
 })
 
 // GET tickets by keyword
@@ -27,6 +35,16 @@ router.get('/fixer/:id', (req,res) => {
 // GET tickets sent by specific users
 router.get('/user/:id', (req,res) => {
     res.json({message: `Tickets from User ${req.params.id}`})
+})
+
+// GET list of other users
+router.get('/manifest', (req,res) => {
+
+    User.find({})
+        .populate('tickets')
+        .then((data)=> {
+            res.json(data);
+        })
 })
 
 //------------------------------------------------------

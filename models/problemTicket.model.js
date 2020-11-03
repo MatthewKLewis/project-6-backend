@@ -7,9 +7,9 @@ const problemTicketSchema = new Schema({
     title: String,
     message: String,
     keywords: [String],
-    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    originator: { type: Schema.Types.ObjectId, ref: 'User' },
     assignedTo: { type: Schema.Types.ObjectId, ref: 'User' },
     assignedBy: { type: Schema.Types.ObjectId, ref: 'User' }
 });
 
-module.exports = mongoose.model('ProblemTicket', problemTicketSchema)
+module.exports = mongoose.model('Ticket', problemTicketSchema)

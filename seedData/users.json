@@ -1,7 +1,7 @@
 [
     {
         "_id" : "000000000000000000000000",
-        "tickets" : [ ],
+        "tickets" : [],
         "name" : "UNASSIGNED",
         "email" : "UNASSIGNED@UNASSIGNED",
         "rank" : "dispatcher",
@@ -21,9 +21,14 @@
     },
     {
         "_id" : "5fa0b0f4876fae929ccd156c",
-        "tickets" : [ ],
+        "tickets" : [
+            "5fa0c3a1ff304da0edca8240",
+            "5fa0c3a1ff304da0edca8241",
+            "5fa0c3a1ff304da0edca8242",
+            "5fa0c3a1ff304da0edca8243"
+            ],
         "name" : "Mark",
-        "email" : "matthew.knight.lewis@gmail.com",
+        "email" : "mark@gmail.com",
         "rank" : "fixer",
         "status" : "active",
         "accountCreatedDate" : null,
@@ -33,8 +38,8 @@
         "_id" : "5fa0b0f4876fae929ccd156d",
         "tickets" : [ ],
         "name" : "Steven",
-        "email" : "matthew.knight.lewis@gmail.com",
-        "rank" : "user",
+        "email" : "steve@gmail.com",
+        "rank" : "client",
         "status" : "active",
         "accountCreatedDate" : null,
         "__v" : 0
