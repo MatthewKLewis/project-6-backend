@@ -1,5 +1,5 @@
-# All-Business Problem Ticket API
-This is a node-js backend with RESTful routes for creating and assigning "problem tickets".
+# "All Business" Problem Ticket API
+This is a node-js backend with RESTful routes for creating and assigning "problem tickets". I plan to use this as the backend for my project 7.
 
 ## Users:
 - Dispatchers - administrators that assign tickets to...
