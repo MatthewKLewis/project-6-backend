@@ -5,16 +5,16 @@ const Schema = mongoose.Schema
 let emailRE = /@/ //I'll get a better one later
 
 const userSchema = new Schema({
-    usernumber: ObjectID,
+    usernumber: Number,
     username: String,
     email: String,
     avatar: String,
     locatation: String,
     role: {
         type: String,
-        enum:['client', 'fixer', 'dispatcher']
+        enum:['user', 'fixer', 'dispatcher']
     },
-    accountCreatedDate: Date,
+    accountCreatedDate: String,
     tickets: [{ type: Schema.Types.ObjectId, ref: 'Ticket' }]
 
 });

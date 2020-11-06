@@ -1,12 +1,24 @@
 [
     {
         "_id" : "000000000000000000000000",
-        "tickets" : [],
-        "name" : "UNASSIGNED",
-        "email" : "UNASSIGNED@UNASSIGNED",
+        "usernumber": 0,
+        "username": "UNASSIGNED",
+        "email": "UNASSIGNED@UNASSIGNED",
+        "avatar": "x",
         "role" : "dispatcher",
-        "status" : "active",
         "accountCreatedDate" : null,
+        "tickets" : [],
+        "__v" : 0
+    },
+    {
+        "_id" : "000000000000000000000001",
+        "usernumber": 0,
+        "username": "NULL",
+        "email": "NULL@NULL",
+        "avatar": "y",
+        "role" : "user",
+        "accountCreatedDate" : null,
+        "tickets" : [],
         "__v" : 0
     }
 ]
