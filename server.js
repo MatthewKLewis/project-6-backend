@@ -4,6 +4,7 @@
 
 //Dependencies
 const express = require("express");
+const cors = require('cors')
 const axios = require("axios");
 const queryString = require("querystring");
 const dotenv = require('dotenv').config()
@@ -11,6 +12,7 @@ const dotenv = require('dotenv').config()
 //Middleware and MW settings
 const app = express();
 app.use(express.json());
+app.use(cors())
 app.set("json spaces", 4);
 
 //Discord Oauth2 Info
