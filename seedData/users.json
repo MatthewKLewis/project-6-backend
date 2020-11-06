@@ -8,40 +8,5 @@
         "status" : "active",
         "accountCreatedDate" : null,
         "__v" : 0
-    },
-    {
-        "_id" : "5fa0b0f4876fae929ccd156b",
-        "tickets" : [ ],
-        "name" : "Matthew",
-        "email" : "matthew.knight.lewis@gmail.com",
-        "rank" : "dispatcher",
-        "status" : "active",
-        "accountCreatedDate" : null,
-        "__v" : 0
-    },
-    {
-        "_id" : "5fa0b0f4876fae929ccd156c",
-        "tickets" : [
-            "5fa0c3a1ff304da0edca8240",
-            "5fa0c3a1ff304da0edca8241",
-            "5fa0c3a1ff304da0edca8242",
-            "5fa0c3a1ff304da0edca8243"
-            ],
-        "name" : "Mark",
-        "email" : "mark@gmail.com",
-        "rank" : "fixer",
-        "status" : "active",
-        "accountCreatedDate" : null,
-        "__v" : 0
-    },
-    {
-        "_id" : "5fa0b0f4876fae929ccd156d",
-        "tickets" : [ ],
-        "name" : "Steven",
-        "email" : "steve@gmail.com",
-        "rank" : "client",
-        "status" : "active",
-        "accountCreatedDate" : null,
-        "__v" : 0
     }
 ]

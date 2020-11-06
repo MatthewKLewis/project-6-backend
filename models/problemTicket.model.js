@@ -6,7 +6,6 @@ const problemTicketSchema = new Schema({
     assignedOn: Date,
     title: String,
     message: String,
-    keywords: [String],
     originator: { type: Schema.Types.ObjectId, ref: 'User' },
     assignedTo: { type: Schema.Types.ObjectId, ref: 'User' },
     assignedBy: { type: Schema.Types.ObjectId, ref: 'User' }

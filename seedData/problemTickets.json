@@ -1,50 +1,12 @@
 [
     {
-        "_id" : "5fa0c3a1ff304da0edca8240",
-        "keywords" : [ ],
         "createdOn" : "2020-11-01T00:00:00Z",
         "assignedOn" : "2020-11-01T00:00:00Z",
         "title" : "Bug #1",
         "message" : "Noah, I got an error",
         "originator" : "000000000000000000000000",
-        "assignedTo" : "5fa0b0f4876fae929ccd156c",
-        "assignedBy" : "5fa0b0f4876fae929ccd156b",
-        "__v" : 0
-    },
-    {
-        "_id" : "5fa0c3a1ff304da0edca8241",
-        "keywords" : [ ],
-        "createdOn" : "2020-11-01T00:00:00Z",
-        "assignedOn" : "2020-11-01T00:00:00Z",
-        "title" : "Bug #2",
-        "message" : "Noah, I got another error",
-        "originator" : "000000000000000000000000",
-        "assignedTo" : "5fa0b0f4876fae929ccd156c",
-        "assignedBy" : "5fa0b0f4876fae929ccd156b",
-        "__v" : 0
-    },
-    {
-        "_id" : "5fa0c3a1ff304da0edca8242",
-        "keywords" : [ ],
-        "createdOn" : "2020-11-01T00:00:00Z",
-        "assignedOn" : "2020-11-01T00:00:00Z",
-        "title" : "Bug #3",
-        "message" : "Noah, I didn't get an error this time",
-        "originator" : "000000000000000000000000",
-        "assignedTo" : "5fa0b0f4876fae929ccd156c",
-        "assignedBy" : "5fa0b0f4876fae929ccd156b",
-        "__v" : 0
-    },
-    {
-        "_id" : "5fa0c3a1ff304da0edca8243",
-        "keywords" : [ ],
-        "createdOn" : "2020-11-01T00:00:00Z",
-        "assignedOn" : "2020-11-01T00:00:00Z",
-        "title" : "Bug #4",
-        "message" : "Teo, you there?",
-        "originator" : "000000000000000000000000",
-        "assignedTo" : "5fa0b0f4876fae929ccd156c",
-        "assignedBy" : "5fa0b0f4876fae929ccd156b",
+        "assignedTo" : "000000000000000000000000",
+        "assignedBy" : "000000000000000000000000",
         "__v" : 0
     }
 ]
