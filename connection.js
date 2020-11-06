@@ -1,3 +1,15 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/problems', {useNewUrlParser:true, useUnifiedTopology:true});
+
+let mongoURI = "";
+
+if (process.env.NODE_ENV === "production") {
+    mongoURI = process.env.DB_URL;
+  } else {
+    mongoURI = "mongodb://localhost/problem";
+  }
+
+mongoose.connect(mongoURI, {
+    useNewUrlParser:true, 
+    useUnifiedTopology:true
+});
 module.exports = mongoose;

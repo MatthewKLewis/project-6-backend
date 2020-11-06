@@ -12,16 +12,15 @@ const dotenv = require('dotenv').config()
 const app = express();
 app.use(express.json());
 app.set("json spaces", 4);
-const port = process.env.URI || 5000;
 
 //Discord Oauth2 Info
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const scope = "identify%20email";
-const discordLoginURL = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Flogin&response_type=code&scope=${scope}`;
-const REDIRECT_URI = "http://127.0.0.1:5000/login";
+const REDIRECT_URI = "https://problemticket.herokuapp.com/login";
 const discordAPIURL = "https://discord.com/api/users/@me";
 const tokenURL = "https://discord.com/api/oauth2/token";
+const discordLoginURL = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}2Flogin&response_type=code&scope=${scope}`;
 
 //A GET from root redirects to Discords Oauth2 page
 app.get("/", (req, res) => {
@@ -51,7 +50,9 @@ app.get("/login", (req, res) => {
 //Routes for Dispatchers
 app.use("/dispatchers", require("./routes/dispatcherRoutes"));
 
+app.set("port", process.env.PORT || 8080);
+
 //APP Baseline Methods
-app.listen(port, () => {
-  console.log(`Listening on Port ${port}`);
+app.listen(app.get('port'), () => {
+  console.log(`Listening on Port ${app.get('port')}`);
 });
