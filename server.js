@@ -28,12 +28,12 @@ app.get("/", (req, res) => {
 });
 
 //A GET from /login will return a user object
-app.get("/login/?code", (req, res) => {
+app.get("/login/:code", (req, res) => {
   axios.post(tokenURL, queryString.stringify({
         client_id: CLIENT_ID,
         client_secret: CLIENT_SECRET,
         grant_type: "authorization_code",
-        code: req.query.code, //or req.query.code?
+        code: req.params.code, //or req.query.code?
         redirect_uri: REDIRECT_URI,
         scope: "identify email connections",
       }), {headers: {"Content-Type": "application/x-www-form-urlencoded"}})
