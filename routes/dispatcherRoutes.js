@@ -1,10 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 
 const ProblemTicket = require('../models/problemTicket.model')
 const User = require('../models/user.model')
 
 router = express()
 router.use(express.json())
+router.use(cors())
 router.set('json spaces', 4)
 
 //------------------------------------------------------GETS
