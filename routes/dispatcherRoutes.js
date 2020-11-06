@@ -50,8 +50,10 @@ router.get('/manifest/:id', (req,res) => {
 //------------------------------------------------------POSTS
 
 // POST new ticket
-router.post('/createUser', (req,res) => {
+router.post('/createTicket', (req,res) => {
+    var tempTicket = new Ticket({});
 
+    tempTicket.save().then(()=> {res.send('k')})
 })
 
 // POST new user
@@ -66,8 +68,7 @@ router.post('/createUser', (req,res) => {
         accountCreateDate: Date.now(),
         tickets: []
     })
-    tempUser.save()
-    res.send(tempUser)
+    tempUser.save().then(()=> {res.send(tempUser)})
 })
 
 //------------------------------------------------------PUTS
