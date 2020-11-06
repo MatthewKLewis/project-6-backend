@@ -4,7 +4,7 @@
         "tickets" : [],
         "name" : "UNASSIGNED",
         "email" : "UNASSIGNED@UNASSIGNED",
-        "rank" : "dispatcher",
+        "role" : "dispatcher",
         "status" : "active",
         "accountCreatedDate" : null,
         "__v" : 0

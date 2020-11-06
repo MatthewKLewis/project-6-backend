@@ -19,10 +19,10 @@ app.set("json spaces", 4);
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const scope = "identify%20email";
-const REDIRECT_URI = "http://localhost:3000/home";
+const REDIRECT_URI = "https://problemsubmitter.herokuapp.com/home";
 const discordAPIURL = "https://discord.com/api/users/@me";
 const tokenURL = "https://discord.com/api/oauth2/token";
-const discordLoginURL = `https://discord.com/api/oauth2/authorize?client_id=761687121756160010&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fhome&response_type=code&scope=identify%20email`;
+const discordLoginURL = `https://discord.com/api/oauth2/authorize?client_id=761687121756160010&redirect_uri=https%3A%2F%2Fproblemsubmitter.herokuapp.com%2Fhome&response_type=code&scope=identify%20email`;
 
 //A GET from root redirects to Discords Oauth2 page
 app.get("/", (req, res) => {

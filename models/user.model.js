@@ -10,7 +10,7 @@ const userSchema = new Schema({
     email: String,
     avatar: String,
     locate: String,
-    rank: {
+    role: {
         type: String,
         enum:['client', 'fixer', 'dispatcher']
     },
