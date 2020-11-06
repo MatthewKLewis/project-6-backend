@@ -27,21 +27,6 @@ router.get('/ticket/:id', (req,res) => {
         })
 })
 
-// GET tickets by keyword
-router.get('/keyword/:id', (req,res) => {
-    res.json({message: `Tickets with the keyword: ${req.params.id}`})
-})
-
-// GET tickets by fixer
-router.get('/fixer/:id', (req,res) => {
-    res.json({message: `Tickets assigned to Fixer ${req.params.id}`})
-})
-
-// GET tickets by originator
-router.get('/user/:id', (req,res) => {
-    res.json({message: `Tickets from User ${req.params.id}`})
-})
-
 // GET list of other users
 router.get('/manifest', (req,res) => {
     User.find({})
@@ -63,8 +48,24 @@ router.get('/manifest/:id', (req,res) => {
 //------------------------------------------------------POSTS
 
 // POST new ticket
-router.post('/ticket', (req,res) => {
-    console.log('Hello');
+router.post('/createUser', (req,res) => {
+
+})
+
+// POST new user
+router.post('/createUser', (req,res) => {
+    var tempUser = new User({
+        usernumber: req.body.usernumber,
+        username: req.body.username,
+        email: req.body.email,
+        avatar: req.body.avatar,
+        location: req.body.location,
+        role: "user",
+        accountCreateDate: Date.now(),
+        tickets: []
+    })
+    tempUser.save()
+    res.send(tempUser)
 })
 
 //------------------------------------------------------PUTS
