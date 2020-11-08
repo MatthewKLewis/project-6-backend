@@ -58,17 +58,29 @@ router.post('/createTicket', (req,res) => {
 
 // POST new user
 router.post('/createUser', (req,res) => {
-    var tempUser = new User({
-        usernumber: req.body.usernumber,
-        username: req.body.username,
-        email: req.body.email,
-        avatar: req.body.avatar,
-        location: req.body.location,
-        role: "user",
-        accountCreateDate: Date.now(),
-        tickets: []
+
+    //the req.body is a user object from Discord. When this method is accessed, it should check to see if there is an identical document 
+    //and create a new one if a document is not found
+
+    User.findOne({username: req.body.username}).then((user)=> {
+        if (user) res.send("Account Already Created")
+        else {
+            console.log('creating new user')
+            var tempUser = new User({
+                usernumber: req.body.usernumber,
+                username: req.body.username,
+                email: req.body.email,
+                avatar: req.body.avatar,
+                location: req.body.location,
+                role: "user",
+                accountCreateDate: Date.now(),
+                tickets: []
+            })
+            tempUser.save().then(()=> {res.send(tempUser)})
+        }
     })
-    tempUser.save().then(()=> {res.send(tempUser)})
+
+    
 })
 
 //------------------------------------------------------PUTS
