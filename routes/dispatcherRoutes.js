@@ -109,7 +109,8 @@ router.put('/', (req,res) => {
 
 // DELETE ticket (I wonder if this should even be allowed?)
 router.delete('/', (req,res) => {
-
+    ProblemTicket.findByIdAndDelete(req.body)
+        .then(()=> res.send('deleted.'))
 
 })
 
