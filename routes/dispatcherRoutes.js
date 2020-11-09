@@ -51,7 +51,7 @@ router.get('/manifest/:id', (req,res) => {
 
 // POST new ticket
 router.post('/createTicket', (req,res) => {
-    var tempTicket = new Ticket(req.body);
+    var tempTicket = new ProblemTicket(req.body);
 
     tempTicket.save().then(()=> {res.send('Problem Ticket Added')})
 })
